@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Submit Issue - #Rento</title>
+<style>
+body {font-family: Arial; background:#f5f7fb; text-align:center; padding:40px;}
+input, textarea {width:300px; padding:10px; margin:10px;}
+button {padding:10px 20px; background:#4a3aff; color:white; border:none; border-radius:8px;}
+</style>
+</head>
+
+<body>
+
+<h1>Submit Your Housing Issue</h1>
+
+<form onsubmit="submitForm(event)">
+<input type="text" placeholder="Your Name" required><br>
+<textarea placeholder="Describe your situation" required></textarea><br>
+<button type="submit">Submit</button>
+</form>
+
+<script>
+function submitForm(e) {
+    e.preventDefault();
+    alert("Your issue has been submitted!");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
